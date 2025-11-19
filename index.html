@@ -642,10 +642,10 @@
         function renderPlayers() {
             const grid = document.getElementById('playersGrid');
             grid.innerHTML = currentPlayers.map(player => {
-                const nationalTeam = player.national && player.national.length > 0 ? player.national[0] : null;
-const nationalBadge = nationalTeam ? `
+                const longestClub = getLongestClub(player);
+const clubBadge = longestClub ? `
     <div class="club-badge">
-        <img src="${getNationalLogo(nationalTeam.name)}" alt="${nationalTeam.name}" onerror="this.parentElement.style.display='none'">
+        <img src="${getClubLogo(longestClub.name)}" alt="${longestClub.name}" onerror="this.parentElement.style.display='none'">
     </div>
 ` : '';
                 
@@ -655,7 +655,7 @@ const nationalBadge = nationalTeam ? `
                          onclick='selectPlayer(${JSON.stringify(player).replace(/'/g, "&apos;")})'>
                         <div class="player-circle">
                             <img src="${player.image}" alt="${player.name}" onerror="this.style.display='none'">
-                            ${nationalBadge}
+                            ${clubBadge}
                         </div>
                         <div class="player-name">${player.name}</div>
                     </div>
