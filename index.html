@@ -512,12 +512,26 @@
             { id: 170, name: "James Rodríguez", image: "james.jpeg", clubs: [{ name: "Porto", start: 2010, end: 2013 }, { name: "Real Madrid", start: 2014, end: 2019 }], national: [{ name: "Colombie", start: 2011, end: 2021 }] },
             { id: 171, name: "Hulk", image: "hulk.jpeg", clubs: [{ name: "Porto", start: 2008, end: 2012 }], national: [{ name: "Brésil", start: 2009, end: 2016 }] },
             { id: 172, name: "Jackson Martínez", image: "jacksonmartinez.jpeg", clubs: [{ name: "Porto", start: 2012, end: 2015 }], national: [{ name: "Colombie", start: 2009, end: 2015 }] },
-            { id: 173, name: "Víctor Baía", image: "baia.jpeg", clubs: [{ name: "Porto", start: 1988, end: 2007 }, { name: "Barcelona", start: 1996, end: 1999 }], national: [{ name: "Portugal", start: 1995, end: 2002 }] },
-            { id: 174, name: "Bruno Alves", image: "brunoalves.jpeg", clubs: [{ name: "Porto", start: 2007, end: 2013 }], national: [{ name: "Portugal", start: 2007, end: 2018 }] }
-        ];
-
-        // Index des joueurs par club
-        const clubIndex = {};
+{ id: 173, name: "Víctor Baía", image: "baia.jpeg", clubs: [{ name: "Porto", start: 1988, end: 2007 }, { name: "Barcelona", start: 1996, end: 1999 }], national: [{ name: "Portugal", start: 1995, end: 2002 }] },
+{ id: 174, name: "Bruno Alves", image: "brunoalves.jpeg", clubs: [{ name: "Porto", start: 2007, end: 2013 }], national: [{ name: "Portugal", start: 2007, end: 2018 }] },
+        
+// AS Monaco
+{ id: 95, name: "Ludovic Giuly", image: "giuly.jpeg", clubs: [{ name: "AS Monaco", start: 1998, end: 2004 }, { name: "Barcelona", start: 2004, end: 2007 }, { name: "PSG", start: 2008, end: 2011 }], national: [{ name: "France", start: 2002, end: 2008 }] },
+{ id: 96, name: "Fernando Morientes", image: "morientes.jpeg", clubs: [{ name: "Real Madrid", start: 1997, end: 2005 }, { name: "AS Monaco", start: 2003, end: 2004 }, { name: "Liverpool", start: 2005, end: 2006 }], national: [{ name: "Espagne", start: 1998, end: 2007 }] },
+            { id: 97, name: "Radamel Falcao", image: "falcao.jpeg", clubs: [{ name: "Atlético Madrid", start: 2011, end: 2013 }, { name: "AS Monaco", start: 2013, end: 2019 }], national: [{ name: "Colombie", start: 2007, end: 2021 }] },
+            { id: 98, name: "Dimitar Berbatov", image: "berbatov.jpeg", clubs: [{ name: "Tottenham", start: 2006, end: 2008 }, { name: "Manchester United", start: 2008, end: 2012 }, { name: "AS Monaco", start: 2014, end: 2015 }], national: [{ name: "Bulgarie", start: 1999, end: 2010 }] },
+            { id: 99, name: "James Rodríguez", image: "james.jpeg", clubs: [{ name: "AS Monaco", start: 2013, end: 2014 }, { name: "Real Madrid", start: 2014, end: 2020 }, { name: "Bayern Munich", start: 2017, end: 2019 }], national: [{ name: "Colombie", start: 2011, end: 2024 }] },
+            { id: 100, name: "Youri Djorkaeff", image: "djorkaeff.jpeg", clubs: [{ name: "AS Monaco", start: 1990, end: 1995 }, { name: "PSG", start: 1995, end: 1996 }, { name: "Inter Milan", start: 1996, end: 1999 }], national: [{ name: "France", start: 1993, end: 2002 }] },
+            { id: 101, name: "Fabinho", image: "fabinho.jpeg", clubs: [{ name: "AS Monaco", start: 2015, end: 2018 }, { name: "Liverpool", start: 2018, end: 2023 }], national: [{ name: "Brésil", start: 2015, end: 2024 }] },
+            { id: 102, name: "Bernardo Silva", image: "bernardosilva.jpeg", clubs: [{ name: "AS Monaco", start: 2014, end: 2017 }, { name: "Manchester City", start: 2017, end: 2024 }], national: [{ name: "Portugal", start: 2015, end: 2024 }] },
+            { id: 103, name: "Kylian Mbappé", image: "mbappe.jpeg", clubs: [{ name: "AS Monaco", start: 2015, end: 2017 }, { name: "PSG", start: 2017, end: 2024 }, { name: "Real Madrid", start: 2024, end: 2024 }], national: [{ name: "France", start: 2017, end: 2024 }] },
+            { id: 104, name: "Thomas Lemar", image: "lemar.jpeg", clubs: [{ name: "AS Monaco", start: 2015, end: 2018 }, { name: "Atlético Madrid", start: 2018, end: 2024 }], national: [{ name: "France", start: 2016, end: 2022 }] },
+            { id: 105, name: "Thierry Henry", image: "henry.jpeg", clubs: [{ name: "AS Monaco", start: 1994, end: 1999 }, { name: "Arsenal", start: 1999, end: 2007 }, { name: "Barcelona", start: 2007, end: 2010 }], national: [{ name: "France", start: 1997, end: 2010 }] },
+            { id: 106, name: "David Trezeguet", image: "trezeguet.jpeg", clubs: [{ name: "AS Monaco", start: 1995, end: 1997 }, { name: "Juventus", start: 2000, end: 2010 }], national: [{ name: "France", start: 1998, end: 2008 }] },
+            { id: 107, name: "Jérôme Rothen", image: "rothen.jpeg", clubs: [{ name: "AS Monaco", start: 1999, end: 2004 }, { name: "PSG", start: 2004, end: 2010 }], national: [{ name: "France", start: 2004, end: 2007 }] }
+];
+// Index des joueurs par club
+const clubIndex = {};
         allPlayersDatabase.forEach(player => {
             player.clubs.forEach(club => {
                 if (!clubIndex[club.name]) {
