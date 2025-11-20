@@ -310,12 +310,12 @@
         // Base de données principale avec ID unique pour chaque joueur
         const allPlayersDatabase = [
             // Barcelona
-            { id: 1, name: "Lionel Messi", image: "messi.jpeg", clubs: [{ name: "Barcelona", start: 2004, end: 2021 }, { name: "PSG", start: 2021, end: 2023 }], national: [{ name: "Argentine", start: 2005, end: 2023 }] },
+            { id: 1, name: "Lionel Messi", image: "messi.jpeg",ballonDor: 8,clubs: [{ name: "Barcelona", start: 2004, end: 2021 }, { name: "PSG", start: 2021, end: 2023 }], national: [{ name: "Argentine", start: 2005, end: 2023 }] },
             { id: 2, name: "Xavi", image: "xavi.jpeg", clubs: [{ name: "Barcelona", start: 1998, end: 2015 }], national: [{ name: "Espagne", start: 2000, end: 2014 }] },
             { id: 3, name: "Andrés Iniesta", image: "iniesta.jpeg", clubs: [{ name: "Barcelona", start: 2002, end: 2018 }], national: [{ name: "Espagne", start: 2006, end: 2018 }] },
-            { id: 4, name: "Ronaldinho", image: "ronaldinho.jpeg", clubs: [{ name: "PSG", start: 2001, end: 2003 }, { name: "Barcelona", start: 2003, end: 2008 }, { name: "AC Milan", start: 2008, end: 2011 }], national: [{ name: "Brésil", start: 1999, end: 2013 }] },
-            { id: 5, name: "Ronaldo Nazário", image: "ronaldo.jpeg", clubs: [{ name: "Barcelona", start: 1996, end: 1997 }, { name: "Inter Milan", start: 1997, end: 2002 }, { name: "Real Madrid", start: 2002, end: 2007 }], national: [{ name: "Brésil", start: 1994, end: 2011 }] },
-            { id: 6, name: "Rivaldo", image: "rivaldo.jpeg", clubs: [{ name: "Barcelona", start: 1997, end: 2002 }], national: [{ name: "Brésil", start: 1993, end: 2003 }] },
+            { id: 4, name: "Ronaldinho", image: "ronaldinho.jpeg",ballonDor: 1,clubs: [{ name: "PSG", start: 2001, end: 2003 }, { name: "Barcelona", start: 2003, end: 2008 }, { name: "AC Milan", start: 2008, end: 2011 }], national: [{ name: "Brésil", start: 1999, end: 2013 }] },
+            { id: 5, name: "Ronaldo Nazário", image: "ronaldo.jpeg",ballonDor: 2,clubs: [{ name: "Barcelona", start: 1996, end: 1997 }, { name: "Inter Milan", start: 1997, end: 2002 }, { name: "Real Madrid", start: 2002, end: 2007 }], national: [{ name: "Brésil", start: 1994, end: 2011 }] },
+            { id: 6, name: "Rivaldo", image: "rivaldo.jpeg",ballonDor: 1,clubs: [{ name: "Barcelona", start: 1997, end: 2002 }], national: [{ name: "Brésil", start: 1993, end: 2003 }] },
             { id: 7, name: "Thierry Henry", image: "henry.jpeg", clubs: [{ name: "Arsenal", start: 1999, end: 2007 }, { name: "Barcelona", start: 2007, end: 2010 }], national: [{ name: "France", start: 1997, end: 2010 }] },
             { id: 8, name: "Samuel Eto'o", image: "etoo.jpeg", clubs: [{ name: "Barcelona", start: 2004, end: 2009 }, { name: "Inter Milan", start: 2009, end: 2011 }, { name: "Chelsea", start: 2013, end: 2014 }], national: [{ name: "Cameroun", start: 1997, end: 2014 }] },
             { id: 9, name: "Carles Puyol", image: "puyol.jpeg", clubs: [{ name: "Barcelona", start: 1999, end: 2014 }], national: [{ name: "Espagne", start: 2000, end: 2013 }] },
@@ -327,15 +327,15 @@
             { id: 15, name: "David Villa", image: "davidvilla.jpeg", clubs: [{ name: "Barcelona", start: 2010, end: 2013 }], national: [{ name: "Espagne", start: 2005, end: 2017 }] },
             
             // Real Madrid
-            { id: 16, name: "Cristiano Ronaldo", image: "cr7.jpeg", clubs: [{ name: "Manchester United", start: 2003, end: 2009 }, { name: "Real Madrid", start: 2009, end: 2018 }, { name: "Juventus", start: 2018, end: 2021 }], national: [{ name: "Portugal", start: 2003, end: 2023 }] },
-            { id: 17, name: "Zinédine Zidane", image: "zidane.jpeg", clubs: [{ name: "Juventus", start: 1996, end: 2001 }, { name: "Real Madrid", start: 2001, end: 2006 }], national: [{ name: "France", start: 1994, end: 2006 }] },
-            { id: 18, name: "Karim Benzema", image: "benzema.jpeg", clubs: [{ name: "Real Madrid", start: 2009, end: 2023 }], national: [{ name: "France", start: 2007, end: 2022 }] },
+            { id: 16, name: "Cristiano Ronaldo", image: "cr7.jpeg",ballonDor: 5,clubs: [{ name: "Manchester United", start: 2003, end: 2009 }, { name: "Real Madrid", start: 2009, end: 2018 }, { name: "Juventus", start: 2018, end: 2021 }], national: [{ name: "Portugal", start: 2003, end: 2023 }] },
+            { id: 17, name: "Zinédine Zidane", image: "zidane.jpeg",ballonDor: 1,clubs: [{ name: "Juventus", start: 1996, end: 2001 }, { name: "Real Madrid", start: 2001, end: 2006 }], national: [{ name: "France", start: 1994, end: 2006 }] },
+            { id: 18, name: "Karim Benzema", image: "benzema.jpeg",ballonDor: 1,clubs: [{ name: "Real Madrid", start: 2009, end: 2023 }], national: [{ name: "France", start: 2007, end: 2022 }] },
             { id: 19, name: "Sergio Ramos", image: "ramos.jpeg", clubs: [{ name: "Real Madrid", start: 2005, end: 2021 }, { name: "PSG", start: 2021, end: 2023 }], national: [{ name: "Espagne", start: 2005, end: 2021 }] },
-            { id: 20, name: "Luka Modrić", image: "modric.jpeg", clubs: [{ name: "Real Madrid", start: 2012, end: 2024 }], national: [{ name: "Croatie", start: 2006, end: 2024 }] },
+            { id: 20, name: "Luka Modrić", image: "modric.jpeg",ballonDor: 1,clubs: [{ name: "Real Madrid", start: 2012, end: 2024 }], national: [{ name: "Croatie", start: 2006, end: 2024 }] },
             { id: 21, name: "Raúl González", image: "raul.jpeg", clubs: [{ name: "Real Madrid", start: 1994, end: 2010 }], national: [{ name: "Espagne", start: 1996, end: 2006 }] },
             { id: 22, name: "Iker Casillas", image: "casillas.jpeg", clubs: [{ name: "Real Madrid", start: 1999, end: 2015 }, { name: "Porto", start: 2015, end: 2020 }], national: [{ name: "Espagne", start: 2000, end: 2016 }] },
             { id: 23, name: "Roberto Carlos", image: "rcarlos.jpeg", clubs: [{ name: "Real Madrid", start: 1996, end: 2007 }], national: [{ name: "Brésil", start: 1992, end: 2006 }] },
-            { id: 24, name: "Luis Figo", image: "figo.jpeg", clubs: [{ name: "Barcelona", start: 1995, end: 2000 }, { name: "Real Madrid", start: 2000, end: 2005 }, { name: "Inter Milan", start: 2005, end: 2009 }], national: [{ name: "Portugal", start: 1991, end: 2006 }] },
+            { id: 24, name: "Luis Figo", image: "figo.jpeg",ballonDor: 1,clubs: [{ name: "Barcelona", start: 1995, end: 2000 }, { name: "Real Madrid", start: 2000, end: 2005 }, { name: "Inter Milan", start: 2005, end: 2009 }], national: [{ name: "Portugal", start: 1991, end: 2006 }] },
             { id: 25, name: "Gareth Bale", image: "bale.jpeg", clubs: [{ name: "Real Madrid", start: 2013, end: 2022 }], national: [{ name: "Pays de Galles", start: 2006, end: 2023 }] },
             { id: 26, name: "Toni Kroos", image: "kroos.jpeg", clubs: [{ name: "Bayern Munich", start: 2013, end: 2014 }, { name: "Real Madrid", start: 2014, end: 2024 }], national: [{ name: "Allemagne", start: 2010, end: 2021 }] },
             { id: 27, name: "Marcelo", image: "marcelo.jpeg", clubs: [{ name: "Real Madrid", start: 2007, end: 2022 }], national: [{ name: "Brésil", start: 2006, end: 2018 }] },
@@ -362,7 +362,7 @@
             { id: 44, name: "Andrea Pirlo", image: "pirlo.jpeg", clubs: [{ name: "Inter Milan", start: 1995, end: 1998 }, { name: "AC Milan", start: 2001, end: 2011 }, { name: "Juventus", start: 2011, end: 2015 }], national: [{ name: "Italie", start: 2002, end: 2015 }] },
             { id: 45, name: "Gianluigi Buffon", image: "buffon.jpeg", clubs: [{ name: "Juventus", start: 2001, end: 2018 }, { name: "PSG", start: 2018, end: 2019 }], national: [{ name: "Italie", start: 1997, end: 2018 }] },
             { id: 46, name: "Alessandro Del Piero", image: "delpiero.jpeg", clubs: [{ name: "Juventus", start: 1993, end: 2012 }], national: [{ name: "Italie", start: 1995, end: 2008 }] },
-            { id: 47, name: "Pavel Nedvěd", image: "nedved.jpeg", clubs: [{ name: "Juventus", start: 2001, end: 2009 }], national: [{ name: "République tchèque", start: 1994, end: 2006 }] },
+            { id: 47, name: "Pavel Nedvěd", image: "nedved.jpeg",ballonDor: 1,clubs: [{ name: "Juventus", start: 2001, end: 2009 }], national: [{ name: "République tchèque", start: 1994, end: 2006 }] },
             { id: 48, name: "Giorgio Chiellini", image: "chiellini.jpeg", clubs: [{ name: "Juventus", start: 2005, end: 2023 }], national: [{ name: "Italie", start: 2004, end: 2022 }] },
             { id: 49, name: "Paul Pogba", image: "pogba.jpeg", clubs: [{ name: "Manchester United", start: 2011, end: 2012 }, { name: "Juventus", start: 2012, end: 2016 }, { name: "Manchester United", start: 2016, end: 2022 }], national: [{ name: "France", start: 2013, end: 2022 }] },
             { id: 50, name: "Paulo Dybala", image: "dybala.jpeg", clubs: [{ name: "Juventus", start: 2015, end: 2022 }], national: [{ name: "Argentine", start: 2015, end: 2024 }] },
@@ -374,7 +374,7 @@
             // AC Milan
             { id: 55, name: "Paolo Maldini", image: "maldini.jpeg", clubs: [{ name: "AC Milan", start: 1985, end: 2009 }], national: [{ name: "Italie", start: 1988, end: 2002 }] },
             { id: 56, name: "Kaká", image: "kaka.jpeg", clubs: [{ name: "AC Milan", start: 2003, end: 2009 }, { name: "Real Madrid", start: 2009, end: 2013 }], national: [{ name: "Brésil", start: 2002, end: 2016 }] },
-            { id: 57, name: "Andriy Shevchenko", image: "shevchenko.jpeg", clubs: [{ name: "AC Milan", start: 1999, end: 2006 }, { name: "Chelsea", start: 2006, end: 2009 }], national: [{ name: "Ukraine", start: 1995, end: 2012 }] },
+            { id: 57, name: "Andriy Shevchenko", image: "shevchenko.jpeg",ballonDor: 1,clubs: [{ name: "AC Milan", start: 1999, end: 2006 }, { name: "Chelsea", start: 2006, end: 2009 }], national: [{ name: "Ukraine", start: 1995, end: 2012 }] },
             { id: 58, name: "Clarence Seedorf", image: "seedorf.jpeg", clubs: [{ name: "Real Madrid", start: 1996, end: 2000 }, { name: "Inter Milan", start: 2000, end: 2002 }, { name: "AC Milan", start: 2002, end: 2012 }], national: [{ name: "Pays-Bas", start: 1994, end: 2008 }] },
             { id: 59, name: "Gennaro Gattuso", image: "gattuso.jpeg", clubs: [{ name: "AC Milan", start: 1999, end: 2012 }], national: [{ name: "Italie", start: 2000, end: 2010 }] },
             { id: 60, name: "Filippo Inzaghi", image: "inzaghi.jpeg", clubs: [{ name: "Juventus", start: 1997, end: 2001 }, { name: "AC Milan", start: 2001, end: 2012 }], national: [{ name: "Italie", start: 1997, end: 2007 }] },
@@ -429,7 +429,7 @@
             { id: 101, name: "Roberto Firmino", image: "firmino.jpeg", clubs: [{ name: "Liverpool", start: 2015, end: 2023 }], national: [{ name: "Brésil", start: 2014, end: 2023 }] },
             { id: 102, name: "Alisson Becker", image: "becker.jpeg", clubs: [{ name: "Liverpool", start: 2018, end: 2024 }], national: [{ name: "Brésil", start: 2015, end: 2024 }] },
             { id: 103, name: "Philippe Coutinho", image: "coutinho.jpeg", clubs: [{ name: "Liverpool", start: 2013, end: 2018 }, { name: "Barcelona", start: 2018, end: 2022 }], national: [{ name: "Brésil", start: 2010, end: 2022 }] },
-            { id: 104, name: "Michael Owen", image: "owen.jpeg", clubs: [{ name: "Liverpool", start: 1996, end: 2004 }, { name: "Real Madrid", start: 2004, end: 2005 }], national: [{ name: "Angleterre", start: 1998, end: 2008 }] },
+            { id: 104, name: "Michael Owen", image: "owen.jpeg",ballonDor: 1,clubs: [{ name: "Liverpool", start: 1996, end: 2004 }, { name: "Real Madrid", start: 2004, end: 2005 }], national: [{ name: "Angleterre", start: 1998, end: 2008 }] },
             { id: 105, name: "Jordan Henderson", image: "henderson.jpeg", clubs: [{ name: "Liverpool", start: 2011, end: 2023 }], national: [{ name: "Angleterre", start: 2010, end: 2024 }] },
             { id: 106, name: "Trent Alexander-Arnold", image: "trent.jpeg", clubs: [{ name: "Liverpool", start: 2016, end: 2024 }], national: [{ name: "Angleterre", start: 2018, end: 2024 }] },
             
@@ -454,7 +454,7 @@
             { id: 122, name: "Robert Pirès", image: "pires.jpeg", clubs: [{ name: "Arsenal", start: 2000, end: 2006 }], national: [{ name: "France", start: 1996, end: 2004 }] },
             { id: 123, name: "Sol Campbell", image: "campbell.jpeg", clubs: [{ name: "Arsenal", start: 2001, end: 2006 }], national: [{ name: "Angleterre", start: 1996, end: 2007 }] },
             { id: 124, name: "Mesut Özil", image: "ozil.jpeg", clubs: [{ name: "Real Madrid", start: 2010, end: 2013 }, { name: "Arsenal", start: 2013, end: 2021 }], national: [{ name: "Allemagne", start: 2009, end: 2018 }] },
-            { id: 125, name: "Alexis S��nchez", image: "sanchez.jpeg", clubs: [{ name: "Barcelona", start: 2011, end: 2014 }, { name: "Arsenal", start: 2014, end: 2018 }], national: [{ name: "Chili", start: 2006, end: 2023 }] },
+            { id: 125, name: "Alexis Sanchez", image: "sanchez.jpeg", clubs: [{ name: "Barcelona", start: 2011, end: 2014 }, { name: "Arsenal", start: 2014, end: 2018 }], national: [{ name: "Chili", start: 2006, end: 2023 }] },
             { id: 126, name: "Gilberto Silva", image: "gilbertosilva.jpeg", clubs: [{ name: "Arsenal", start: 2002, end: 2008 }], national: [{ name: "Brésil", start: 2002, end: 2006 }] },
             { id: 127, name: "Pierre-Emerick Aubameyang", image: "aubameyang.jpeg", clubs: [{ name: "Borussia Dortmund", start: 2013, end: 2018 }, { name: "Arsenal", start: 2018, end: 2022 }, { name: "Barcelona", start: 2022, end: 2023 }], national: [{ name: "Gabon", start: 2009, end: 2022 }] },
             { id: 128, name: "Bukayo Saka", image: "saka.jpeg", clubs: [{ name: "Arsenal", start: 2018, end: 2024 }], national: [{ name: "Angleterre", start: 2020, end: 2024 }] },
@@ -640,28 +640,40 @@
         }
 
         function renderPlayers() {
-            const grid = document.getElementById('playersGrid');
-            grid.innerHTML = currentPlayers.map(player => {
-                const nationalTeam = player.national && player.national.length > 0 ? player.national[0] : null;
-const nationalBadge = nationalTeam ? `
-    <div class="club-badge">
-        <img src="${getNationalLogo(nationalTeam.name)}" alt="${nationalTeam.name}" onerror="this.parentElement.style.display='none'">
-    </div>
-` : '';
-                
-                return `
-                    <div class="player-card ${selectedPlayers.some(p => p.id === player.id) ? 'selected' : ''}" 
-                         data-player-id="${player.id}"
-                         onclick='selectPlayer(${JSON.stringify(player).replace(/'/g, "&apos;")})'>
-                        <div class="player-circle">
-                            <img src="${player.image}" alt="${player.name}" onerror="this.style.display='none'">
-                            ${nationalBadge}
-                        </div>
-                        <div class="player-name">${player.name}</div>
+    const grid = document.getElementById('playersGrid');
+    grid.innerHTML = currentPlayers.map(player => {
+        const nationalTeam = player.national && player.national.length > 0 ? player.national[0] : null;
+        const nationalBadge = nationalTeam ? `
+            <div class="club-badge">
+                <img src="${getNationalLogo(nationalTeam.name)}" alt="${nationalTeam.name}" onerror="this.parentElement.style.display='none'">
+            </div>
+        ` : '';
+
+        const ballonBadge = player.ballonDor ? `
+            <div style="position: absolute; bottom: 0; left: 0; width: 40px; height: 40px; transform: translate(-20%, 20%); z-index: 10;">
+                <img src="ballon.jpeg" alt="Ballon d'Or" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));" onerror="this.parentElement.style.display='none'">
+                ${player.ballonDor > 1 ? `
+                    <div style="position: absolute; top: -4px; right: -4px; background: linear-gradient(135deg, #ef4444, #dc2626); color: white; font-size: 12px; font-weight: bold; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                        ${player.ballonDor}
                     </div>
-                `;
-            }).join('');
-        }
+                ` : ''}
+            </div>
+        ` : '';
+        
+        return `
+            <div class="player-card ${selectedPlayers.some(p => p.id === player.id) ? 'selected' : ''}" 
+                 data-player-id="${player.id}"
+                 onclick='selectPlayer(${JSON.stringify(player).replace(/'/g, "&apos;")})'>
+                <div class="player-circle">
+                    <img src="${player.image}" alt="${player.name}" onerror="this.style.display='none'">
+                    ${nationalBadge}
+                    ${ballonBadge}
+                </div>
+                <div class="player-name">${player.name}</div>
+            </div>
+        `;
+    }).join('');
+}
 
         function selectPlayer(player) {
             const existingIndex = selectedPlayers.findIndex(p => p.id === player.id);
