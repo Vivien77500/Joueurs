@@ -662,8 +662,8 @@
             resultsSection.classList.add('visible');
             
             selectedPlayersList.innerHTML = selectedPlayers.map(p => 
-                `<div class="selected-player-badge">${p.name}<span onclick="removePlayer(${p.id}); event.stopPropagation();" style="cursor: pointer; margin-left: 8px; font-weight: bold; font-size: 16px;">✕</span></div>`
-            ).join('');
+    `<div class="selected-player-badge">${p.name}<span onclick="removePlayer('${p.id}'); event.stopPropagation();" style="cursor: pointer; margin-left: 8px; font-weight: bold; font-size: 16px;">✕</span></div>`
+).join('');
 
             const commonClubs = findCommonClubPeriods(selectedPlayers);
             const commonNationals = findCommonNationalPeriods(selectedPlayers);
