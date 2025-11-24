@@ -157,13 +157,14 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         
-        .results-section {
-            background: rgba(255,255,255,0.95);
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            display: none;
-        }
+        .player-name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 20;
+}
         
         .results-section.visible {
             display: block;
@@ -519,15 +520,15 @@
 { id: 119, name: "Pablo Aimar", image: "aimar.jpeg", clubs: [{ name: "Benfica", start: 2006, end: 2008 }, { name: "Valencia", start: 2001, end: 2006 }], national: [{ name: "Argentine", start: 1999, end: 2009 }] },
 { id: 121, name: "Renato Sanches", image: "renatosanches.jpeg", clubs: [{ name: "Benfica", start: 2015, end: 2016 }, { name: "Bayern Munich", start: 2016, end: 2019 }, { name: "PSG", start: 2022, end: 2023 }], national: [{ name: "Portugal", start: 2016, end: 2023 }] },
 { id: 122, name: "Ederson", image: "ederson.jpeg", clubs: [{ name: "Benfica", start: 2015, end: 2017 }, { name: "Manchester City", start: 2017, end: 2025 }], national: [{ name: "Brésil", start: 2017, end: 2025 }] },
-{ id: 123, name: "Víctor Lindelöf", image: "lindelof.jpeg", clubs: [{ name: "Benfica", start: 2012, end: 2017 }, { name: "Manchester United", start: 2017, end: 2025 }], national: [{ name: "Suède", start: 2016, end: 2025 }] },
-{ id: 124, name: "Nemanja Matić", image: "matic.jpeg", clubs: [{ name: "Benfica", start: 2011, end: 2014 }, { name: "Chelsea", start: 2014, end: 2017 }, { name: "Manchester United", start: 2017, end: 2022 }], national: [{ name: "Serbie", start: 2008, end: 2021 }] },
+{ id: 123, name: "Víctor Lindelöf", image: "lindelof.jpg", clubs: [{ name: "Benfica", start: 2012, end: 2017 }, { name: "Manchester United", start: 2017, end: 2025 }], national: [{ name: "Suède", start: 2016, end: 2025 }] },
+{ id: 124, name: "Nemanja Matić", image: "matic.jpg", clubs: [{ name: "Benfica", start: 2011, end: 2014 }, { name: "Chelsea", start: 2014, end: 2017 }, { name: "Manchester United", start: 2017, end: 2022 }], national: [{ name: "Serbie", start: 2008, end: 2021 }] },
 { id: 125, name: "Javi García", image: "javigarcia.jpeg", clubs: [{ name: "Benfica", start: 2012, end: 2019 }, { name: "Manchester City", start: 2012, end: 2014 }], national: [{ name: "Espagne", start: 2010, end: 2013 }] },
-{ id: 126, name: "Luisão", image: "luisao.jpeg", clubs: [{ name: "Benfica", start: 2003, end: 2017 }], national: [{ name: "Brésil", start: 2007, end: 2013 }] },
-{ id: 127, name: "Óscar Cardozo", image: "cardozo.jpeg", clubs: [{ name: "Benfica", start: 2007, end: 2014 }], national: [{ name: "Paraguay", start: 2006, end: 2015 }] },
-{ id: 128, name: "Simão Sabrosa", image: "simao.jpeg", clubs: [{ name: "Benfica", start: 1998, end: 2007 }, { name: "Atlético Madrid", start: 2007, end: 2011 }], national: [{ name: "Portugal", start: 1998, end: 2010 }] },
-{ id: 129, name: "Jardel", image: "jardel.jpeg", clubs: [{ name: "Porto", start: 1996, end: 2000 }, { name: "Benfica", start: 2008, end: 2009 }], national: [{ name: "Brésil", start: 1996, end: 2003 }] },
-{ id: 130, name: "David Luiz", image: "davidluiz.jpeg", clubs: [{ name: "Benfica", start: 2007, end: 2011 }, { name: "Chelsea", start: 2011, end: 2016 }, { name: "PSG", start: 2014, end: 2016 }], national: [{ name: "Brésil", start: 2010, end: 2019 }] },
-{ id: 131, name: "Ramires", image: "ramires.jpeg", clubs: [{ name: "Benfica", start: 2009, end: 2010 }, { name: "Chelsea", start: 2010, end: 2016 }], national: [{ name: "Brésil", start: 2009, end: 2016 }] },
+{ id: 126, name: "Luisão", image: "luisao.jpg", clubs: [{ name: "Benfica", start: 2003, end: 2017 }], national: [{ name: "Brésil", start: 2007, end: 2013 }] },
+{ id: 127, name: "Óscar Cardozo", image: "cardozo.jpg", clubs: [{ name: "Benfica", start: 2007, end: 2014 }], national: [{ name: "Paraguay", start: 2006, end: 2015 }] },
+{ id: 128, name: "Simão Sabrosa", image: "simao.png", clubs: [{ name: "Benfica", start: 1998, end: 2007 }, { name: "Atlético Madrid", start: 2007, end: 2011 }], national: [{ name: "Portugal", start: 1998, end: 2010 }] },
+{ id: 129, name: "Jardel", image: "jardel.jpg", clubs: [{ name: "Porto", start: 1996, end: 2000 }, { name: "Benfica", start: 2008, end: 2009 }], national: [{ name: "Brésil", start: 1996, end: 2003 }] },
+{ id: 130, name: "David Luiz", image: "davidluiz.jpg", clubs: [{ name: "Benfica", start: 2007, end: 2011 }, { name: "Chelsea", start: 2011, end: 2016 }, { name: "PSG", start: 2014, end: 2016 }], national: [{ name: "Brésil", start: 2010, end: 2019 }] },
+{ id: 131, name: "Ramires", image: "ramires.jpg", clubs: [{ name: "Benfica", start: 2009, end: 2010 }, { name: "Chelsea", start: 2010, end: 2016 }], national: [{ name: "Brésil", start: 2009, end: 2016 }] },
 { id: 132, name: "Gonçalo Guedes", image: "guedes.jpeg", clubs: [{ name: "Benfica", start: 2014, end: 2017 }, { name: "Valencia", start: 2018, end: 2022 }], national: [{ name: "Portugal", start: 2015, end: 2023 }] },
 { id: 133, name: "André Gomes", image: "andregomes.jpeg", clubs: [{ name: "Benfica", start: 2012, end: 2015 }, { name: "Barcelona", start: 2016, end: 2018 }], national: [{ name: "Portugal", start: 2014, end: 2019 }] },
 { id: 134, name: "Raúl Jiménez", image: "jimenez.jpeg", clubs: [{ name: "Benfica", start: 2015, end: 2018 }], national: [{ name: "Mexique", start: 2013, end: 2025 }] },
