@@ -183,6 +183,24 @@
             line-height: 1.3;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
+         .club-logo-small {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .custom-select .select-items div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+        }
+
+        .custom-select .select-items div:hover {
+            background-color: #f0f0f0;
+        }
 
         #resultsSection {
             background: rgba(255, 255, 255, 0.95);
@@ -327,17 +345,76 @@
      Sélectionnez 2 à 5 joueurs pour découvrir leurs périodes communes
     </div>
    </header>
-   <div class="club-filter"><select id="clubSelect"> <option value="">Tous les clubs</option> <option value="Barcelona">FC Barcelone</option> <option value="Real Madrid">Real Madrid CF</option> <option value="Juventus">Juventus Turin</option> <option value="AC Milan">AC Milan</option> <option value="Inter Milan">Inter Milan</option> <option value="PSG">PSG</option> <option value="Manchester United">Manchester United</option> <option value="Arsenal">Arsenal</option> <option value="Bayern Munich">Bayern Munich</option> <option value="Liverpool">Liverpool</option> <option value="Chelsea">Chelsea</option> <option value="Manchester City">Manchester City</option> <option value="Atlético Madrid">Atlético Madrid</option> <option value="Borussia Dortmund">Borussia Dortmund</option> <option value="Ajax">Ajax Amsterdam</option> <option value="Porto">FC Porto</option> <option value="AS Monaco">AS Monaco</option> <option value="Benfica">SL Benfica</option> <option value="Tottenham">Tottenham Hotspur</option> <option value="Valencia">Valencia CF</option> <option value="RB Leipzig">RB Leipzig</option> <option value="AS Roma">AS Roma</option> <option value="Internacional">SC Internacional</option> <option value="Rangers">Rangers FC</option> <option value="Leeds United">Leeds United</option> <option value="Bournemouth">AFC Bournemouth</option> </select>
+   <div class="club-filter">
+   <div class="custom-select" id="customClubSelect">
+    <div class="select-selected"><span class="select-text">Tous les clubs</span>
+    </div>
+    <div class="select-items select-hide">
+     <div data-value=""><span class="select-text">Tous les clubs</span>
+     </div>
+     <div data-value="Barcelona"><span class="select-text">FC Barcelone</span> <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" alt="Barcelona" class="club-logo-small">
+     </div>
+     <div data-value="Real Madrid"><span class="select-text">Real Madrid CF</span> <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Real Madrid" class="club-logo-small">
+     </div>
+     <div data-value="Juventus"><span class="select-text">Juventus Turin</span> <img src="juve.png" alt="Juventus" class="club-logo-small">
+     </div>
+     <div data-value="AC Milan"><span class="select-text">AC Milan</span> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg" alt="AC Milan" class="club-logo-small">
+     </div>
+     <div data-value="Inter Milan"><span class="select-text">Inter Milan</span> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg" alt="Inter Milan" class="club-logo-small">
+     </div>
+     <div data-value="PSG"><span class="select-text">PSG</span> <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg" alt="PSG" class="club-logo-small">
+     </div>
+     <div data-value="Manchester United"><span class="select-text">Manchester United</span> <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Manchester United" class="club-logo-small">
+     </div>
+     <div data-value="Arsenal"><span class="select-text">Arsenal</span> <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" alt="Arsenal" class="club-logo-small">
+     </div>
+     <div data-value="Bayern Munich"><span class="select-text">Bayern Munich</span> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg" alt="Bayern Munich" class="club-logo-small">
+     </div>
+     <div data-value="Liverpool"><span class="select-text">Liverpool</span> <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg" alt="Liverpool" class="club-logo-small">
+     </div>
+     <div data-value="Chelsea"><span class="select-text">Chelsea</span> <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea" class="club-logo-small">
+     </div>
+     <div data-value="Manchester City"><span class="select-text">Manchester City</span> <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="Manchester City" class="club-logo-small">
+     </div>
+     <div data-value="Atlético Madrid"><span class="select-text">Atlético Madrid</span> <img src="atletico.png" alt="Atlético Madrid" class="club-logo-small">
+     </div>
+     <div data-value="Borussia Dortmund"><span class="select-text">Borussia Dortmund</span> <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg" alt="Borussia Dortmund" class="club-logo-small">
+     </div>
+     <div data-value="Ajax"><span class="select-text">Ajax Amsterdam</span> <img src="https://upload.wikimedia.org/wikipedia/en/7/79/Ajax_Amsterdam.svg" alt="Ajax" class="club-logo-small">
+     </div>
+     <div data-value="Porto"><span class="select-text">FC Porto</span> <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/FC_Porto.svg" alt="Porto" class="club-logo-small">
+     </div>
+     <div data-value="AS Monaco"><span class="select-text">AS Monaco</span> <img src="monaco.png" alt="AS Monaco" class="club-logo-small">
+     </div>
+     <div data-value="Benfica"><span class="select-text">SL Benfica</span> <img src="benfica.png" alt="Benfica" class="club-logo-small">
+     </div>
+     <div data-value="Tottenham"><span class="select-text">Tottenham Hotspur</span> <img src="tottenham.png" alt="Tottenham" class="club-logo-small">
+     </div>
+     <div data-value="Valencia"><span class="select-text">Valencia CF</span> <img src="valencia.png" alt="Valencia" class="club-logo-small">
+     </div>
+     <div data-value="RB Leipzig"><span class="select-text">RB Leipzig</span> <img src="leipzig.png" alt="RB Leipzig" class="club-logo-small">
+     </div>
+     <div data-value="AS Roma"><span class="select-text">AS Roma</span> <img src="roma.png" alt="AS Roma" class="club-logo-small">
+     </div>
+     <div data-value="Internacional"><span class="select-text">SC Internacional</span> <img src="internacional.png" alt="Internacional" class="club-logo-small">
+     </div>
+     <div data-value="Rangers"><span class="select-text">Rangers FC</span> <img src="rangers.png" alt="Rangers" class="club-logo-small">
+     </div>
+     <div data-value="Leeds United"><span class="select-text">Leeds United</span> <img src="leeds.png" alt="Leeds United" class="club-logo-small">
+     </div>
+     <div data-value="Bournemouth"><span class="select-text">AFC Bournemouth</span> <img src="bournemouth.png" alt="Bournemouth" class="club-logo-small">
+     </div>
+    </div>
    </div>
-   <section class="players-section">
-    <div id="playersGrid"></div>
-   </section>
-   <section id="resultsSection">
-    <h2 class="results-title">Résultats</h2>
-    <div id="selectedPlayersList"></div>
-    <div id="commonPeriods"></div>
-   </section>
   </div>
+  <section class="players-section">
+   <div id="playersGrid"></div>
+  </section>
+  <section id="resultsSection">
+   <h2 class="results-title">Résultats</h2>
+   <div id="selectedPlayersList"></div>
+   <div id="commonPeriods"></div>
+  </section>
   <script>
         const defaultConfig = {
             title: "Périodes Communes",
