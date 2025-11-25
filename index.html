@@ -156,7 +156,7 @@
             border-radius: 50%;
         }
 
-         .club-badge {
+        .club-badge {
             position: absolute;
             bottom: 0;
             right: 0;
@@ -168,28 +168,6 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
             transform: translate(20%, 20%);
             z-index: 5;
-            position: relative;
-        }
-        .club-badge::after {
-            content: attr(data-country);
-            position: absolute;
-            bottom: 120%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.85);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 12px;
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-            z-index: 10;
-        }
-
-        .club-badge:hover::after {
-            opacity: 1;
         }
 
         .club-badge img {
